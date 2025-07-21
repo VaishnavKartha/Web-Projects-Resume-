@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@layer base{
+  body{
+    
+  }
+}
+
+@layer components{
+  .navIcons{
+    @apply flex flex-col items-center justify-center cursor-pointer hover:bg-[rgba(0,0,0,0.5)] hover:rounded-[20px] 
+    transition-all duration-300 ease-in-out active:bg-[rgba(0,0,0,0.7)] active:scale-90 py-2 px-2;
+  }
+}
+
+@theme{
+  --animate-Scr:Scr   linear infinite;
+  @keyframes Scr{
+    0%{
+      transform:translateX(0%);
+    }
+    100%{
+      transform:translateX(-50%);
+    }
+  }
+}
